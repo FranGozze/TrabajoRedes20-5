@@ -1,0 +1,2 @@
+ifcofing eth0 100.0.3.2/24 up
+ifcofing eth1 100.0.0.3/24 up
