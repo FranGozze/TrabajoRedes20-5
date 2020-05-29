@@ -4,8 +4,8 @@ Materia: Redes 3
 
 Escenario de estudio "mini-internet" correspondiente al pdf.
 
-<title>Integrantes del grupo:</title><br>
-Franco Gozzerino<br>
-Rosario Gonzales<br>
-Ana Olivares<br>
-Alan Hergenreder<br>
+Integrantes del grupo:
+Franco Gozzerino
+Rosario Gonzales
+Ana Olivares
+Alan Hergenreder
