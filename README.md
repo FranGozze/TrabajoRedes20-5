@@ -1,6 +1,4 @@
-Trabajo de 6to informática del IPS del 2020
-
-Materia: Redes 3
+Este repositorio es un proyecto para la materia Conexión a Redes Extendidas (CRE) de 6to año informática del Instituto Politécnico Superior (IPS) de la Universidad Nacional de Rosario (UNR) 2020.
 
 Escenario de estudio "mini-internet" correspondiente al pdf.
 
