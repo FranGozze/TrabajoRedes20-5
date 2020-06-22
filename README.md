@@ -1,4 +1,4 @@
-[![Licencia](https://img.shields.io/github/license/FranGozze/TrabajoRedes20-5?color=green)](https://github.com/FranGozze/TrabajoRedes20-5/blob/master/LICENSE)
+[![Licencia](https://img.shields.io/github/license/FranGozze/TrabajoRedes20-5?color=purple)](https://github.com/FranGozze/TrabajoRedes20-5/blob/master/LICENSE)
 
 # Mini internet :globe_with_meridians:
 Este repositorio es un proyecto para la materia Conexión a Redes Extendidas (CRE) de 6to año informática del Instituto Politécnico Superior (IPS) de la Universidad Nacional de Rosario (UNR) 2020.
