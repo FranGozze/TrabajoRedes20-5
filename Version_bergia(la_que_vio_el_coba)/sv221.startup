@@ -1,0 +1,1 @@
+ifconfig eth0 32.3.2.2/24 up

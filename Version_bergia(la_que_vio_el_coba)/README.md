@@ -1,2 +1,0 @@
-# LabCoba
-- Prueba 1

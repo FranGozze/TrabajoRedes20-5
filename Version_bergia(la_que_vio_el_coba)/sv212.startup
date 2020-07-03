@@ -1,0 +1,1 @@
+ifconfig eth0 202.1.0.3/18 up
