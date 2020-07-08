@@ -8,4 +8,4 @@ $TTL    60000
                         )
 
 @                      IN      NS        sv203.gob.ar.
-sv203                  IN      A         102.2.2.3
+sv203.gob.ar.          IN      A         102.2.2.3
