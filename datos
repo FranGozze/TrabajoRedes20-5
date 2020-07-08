@@ -1,11 +1,11 @@
 2001 root (.)
-sv220 tld (ar)
-sv222 domain (edu.ar)
+sv220 tld (ar)  22.1.3.2
+sv222 domain (edu.ar)  32.3.2.3    
 sv221 backup (.)
-sv203 domain (gob.ar)
-sv204 backup (edu.ar), (gob.ar) y (ar)
+sv203 domain (gob.ar)  102.2.2.3
+sv204 backup (edu.ar), (gob.ar) y (ar)  
 sv210 backup (ar)
-sv213 domain (unr.edu.ar) y (ips.edu.ar)
+sv213 domain (unr.edu.ar) y (ips.edu.ar)  202.1.64.3
 sv212 backup (unr.edu.ar), (ips.edu.ar) y (gob.ar)
 
 todos los servidores deberán tener su nombre y alias (en caso de ser necesario)
