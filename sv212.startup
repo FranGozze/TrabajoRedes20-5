@@ -1,3 +1,4 @@
 ifconfig eth0 202.1.0.3/18 up
+route add default gw 202.1.0.2 eth0
 
 /etc/init.d/bind start
