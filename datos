@@ -1,0 +1,33 @@
+2001 root (.)
+sv220 tld (ar)
+sv222 domain (edu.ar)
+sv221 backup (.)
+sv203 domain (gob.ar)
+sv204 backup (edu.ar), (gob.ar) y (ar)
+sv210 backup (ar)
+sv213 domain (unr.edu.ar) y (ips.edu.ar)
+sv212 backup (unr.edu.ar), (ips.edu.ar) y (gob.ar)
+
+todos los servidores deberán tener su nombre y alias (en caso de ser necesario)
+
+
+db root:
+.                  IN    NS    ROOT-SERVER.
+ROOT-SERVER.       IN    A     12.0.0.22
+
+
+db otra cosa:
+$TTL    60000
+@               IN      SOA     SERVIDOR.DOMINIO    root.DOMINIO (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@                IN      NS      SERVIDOR.DOMINIO
+SERVIDOR           IN      A       IP_SERVIDOR
+ALIAS             IN      CNAME   IP_SERVIDOR
+
+

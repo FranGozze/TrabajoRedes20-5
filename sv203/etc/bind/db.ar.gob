@@ -1,0 +1,11 @@
+$TTL    60000
+@               IN      SOA     sv203.gob.ar.    root.gob.ar. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@                      IN      NS        sv203.gob.ar.
+sv203                  IN      A         102.2.2.3

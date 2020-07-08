@@ -1,0 +1,12 @@
+$TTL    60000
+@               IN      SOA     sv222.edu.ar.    root.edu.ar. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@                      IN      NS        sv222.edu.ar.
+sv222                  IN      A         32.3.2.3
+
