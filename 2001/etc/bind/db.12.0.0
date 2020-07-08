@@ -1,3 +1,4 @@
+; reverse lookup database
 $TTL    1
 @               IN      SOA     22.0.0.12.in-addr.arpa.    nobody.nowhere. (
                         2006031201 ; serial
