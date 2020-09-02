@@ -1,1 +1,5 @@
 ifconfig eth0 10.0.0.3/24 up
+route add default gw 10.0.0.1 eth0
+
+a2enmod ssl
+/etc/init.d/apache2 start
