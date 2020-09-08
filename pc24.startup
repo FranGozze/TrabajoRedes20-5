@@ -1,5 +1,4 @@
 ifconfig eth0 152.2.0.2/16 up
 route add default gw 152.2.0.1 eth0
 
-ifconfig eth0 add 2202::/64
-
+ifconfig eth0 add 2202::2/64
