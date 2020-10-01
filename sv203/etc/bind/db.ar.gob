@@ -7,6 +7,8 @@ $TTL    60000
                         0 ; negative cache ttl
                         )
 
-@               IN      NS      sv206.gob.ar.
+@               IN      NS      sv203.gob.ar.
+sv203           IN      A       102.2.2.3
+
 sv206           IN      A       102.2.2.6
 www             IN      CNAME   sv206
