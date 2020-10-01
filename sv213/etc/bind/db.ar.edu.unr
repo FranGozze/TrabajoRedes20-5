@@ -8,7 +8,7 @@ $TTL    60000
                         )
 
 @                      IN      NS        sv213.unr.edu.ar.
-sv213      IN      A         202.1.64.3
+sv213                  IN      A         202.1.64.3
 
 sv208                  IN      A         102.1.4.5
 www                    IN      CNAME     sv208

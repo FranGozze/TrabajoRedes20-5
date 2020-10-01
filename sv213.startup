@@ -1,8 +1,4 @@
 ifconfig eth0 202.1.64.3/18 up
 route add default gw 202.1.64.1 eth0
 
-ad2dissite 000-default.conf
-ad2ensite unr.edu.ar
-ad2ensite ips.edu.ar
-
 /etc/init.d/bind start
