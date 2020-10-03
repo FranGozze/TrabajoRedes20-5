@@ -4,6 +4,5 @@ route add default gw 102.1.4.1 eth0
 a2dissite 000-default.conf
 a2ensite ips.edu.ar
 a2ensite unr.edu.ar
-a2ensite edu.ar
 
 /etc/init.d/apache2 start
