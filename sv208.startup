@@ -1,8 +1,13 @@
 ifconfig eth0 102.1.4.5/22 up 
 route add default gw 102.1.4.1 eth0
 
-a2dissite 000-default.conf
-a2ensite ips.edu.ar
-a2ensite unr.edu.ar
+ln -s /etc/nginx/sites-available/edu.ar.conf /etc/nginx/sites-enabled/edu.ar.conf
+ln -s /etc/nginx/sites-available/ips.edu.ar.conf /etc/nginx/sites-enabled/ips.edu.ar.conf
+ln -s /etc/nginx/sites-available/unr.edu.ar.conf /etc/nginx/sites-enabled/unr.edu.ar.conf
 
-/etc/init.d/apache2 start
+mkdir -p /etc/nginx/sites-available
+mkdir -p /etc/nginx/sites-enabled
+
+/etc/init.d/nginx start
+
+
