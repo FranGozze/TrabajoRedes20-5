@@ -9,5 +9,3 @@ mkdir -p /etc/nginx/sites-available
 mkdir -p /etc/nginx/sites-enabled
 
 /etc/init.d/nginx start
-
-
