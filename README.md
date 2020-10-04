@@ -86,7 +86,7 @@ Lo mismo que ping pero marcando la ruta del mensaje.
 Verifica la asignacion de un dominio sobre los servidores. 
 
 * <code>links</code><br>
-Conecta a un dominio para testear el host de un servidor.
+Conecta a un dominio para testear el host de un servidor. En el caso de nuestro laboratorio son: www.ips.edu.ar, www.unr.edu.ar, www.edu.ar, www.gob.ar
 
 #### Apache y Nginx :mailbox_with_mail:
 Los servidores se activan de forma similar con el comando <code>start</code> en los archivos <code>~.startup</code> de cada servidor, y luego se configuran con sus respectivas carpetas en <code>/etc/apache2/...</code> o bien <code>/etc/nginx/...</code> según el caso.
