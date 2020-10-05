@@ -86,7 +86,7 @@ Lo mismo que ping pero marcando la ruta del mensaje.
 Verifica la asignacion de un dominio sobre los servidores. 
 
 * <code>links</code><br>
-Conecta a un dominio para testear el host de un servidor. En el caso de nuestro laboratorio son: www.ips.edu.ar, www.unr.edu.ar, www.edu.ar, www.gob.ar
+Conecta a un dominio para testear el host de un servidor. En el caso de este laboratorio son: www.ips.edu.ar, www.unr.edu.ar, www.edu.ar y www.gob.ar.
 
 #### Apache y Nginx :mailbox_with_mail:
 Los servidores se activan de forma similar con el comando <code>start</code> en los archivos <code>~.startup</code> de cada servidor, y luego se configuran con sus respectivas carpetas en <code>/etc/apache2/...</code> o bien <code>/etc/nginx/...</code> según el caso.
@@ -94,6 +94,63 @@ Los servidores se activan de forma similar con el comando <code>start</code> en 
 Ejemplos:
 <pre><code>/etc/init.d/nginx start</pre></code>
 <pre><code>/etc/init.d/apache2 start</pre></code>
+
+Una vez activado, para configurar los servidores hay varios tipos de archivos:<br>
+* <code>db.~</code><br>
+Añade una configuracion para el dominio especificado en el nombre (debe estar escrito al revés).
+Si es <code>db.root</code> añade una configuracion para el dominio que se resuelve con el alias de la maquina virtual.
+
+Ejemplo:
+<pre><code>db.ar.edu.ips
+db.ar.edu.unr
+db.root</code></pre>
+
+Dentro de los archivos <code>db.~</code> se especifica:
+* <code>@</code><br>
+Para identificar a la propia maquina.<br>
+
+o bien:
+* <code>alias</code><br>
+Para resolver un dominio con una ip.<br>
+
+Tambien se pueden especificar CNAMEs para redireccionar los links hacia los servidores que contengan las paginas en su host.
+
+Ejemplo:
+<pre><code>
+$TTL    60000
+@               IN      SOA     sv203.gob.ar.    root.gob.ar. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      sv203.gob.ar.
+sv203           IN      A       102.2.2.3
+
+sv206           IN      A       102.2.2.6
+www             IN      CNAME   sv206
+</pre></code>
+
+* <code>named.conf</code><br>
+Detalla el tipo de servidor, la localizacion y posibles backups o slaves por zonas. A continuación un ejemplo:<br>
+<pre><code>options {
+    directory "/etc/bind";
+    allow-recursion { any; };
+    dump-file "/var/bind/cache.db";
+};
+
+
+zone "." {
+    type hint;
+    file "db.root";
+};
+
+zone "gob.ar" {
+    type master;
+    file "db.ar.gob";
+};</pre></code>
 
 Cabe aclarar que para trabajar con Nginx sobre kathara hay que modficar la imagen de Docker, puesto que Nginx no está incluido por default.
 
